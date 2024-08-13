@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <marquee behavior="scroll" direction="left" style="color: red; font-size: large">Tech Giant Launches Revolutionary Smartphone with AI Features. Local Community Rallies to Support Small Businesses Amid
+    Economic Challenges. Major Breakthrough in Renewable Energy Technology Promises Sustainable Future. Scientists Discover
+    New Exoplanet That Could Support Life. Global Leaders Gather for Climate Summit to Address Urgent Environmental Issues.
+    New Study Shows Link Between Sleep Quality and Mental Health. Health Officials Warn of Rising Flu Cases as Winter
+    Approaches. Local High School Robotics Team Wins National Championship. New Regulations Introduced to Enhance Data
+    Privacy for Consumers. Upcoming Film Festival Promises Exciting Lineup of International Films.</marquee>
+        
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo" style="z-index: 3;">IWP NEWS</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#world" class="nav-link">World</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#topics" class="nav-link">Topics</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#latest" class="nav-link">Latest</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#footer" class="nav-link">Subscribe</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <br /><br />
+
+
+    <h1 style="margin: 10px;">TOP STORIES</h1>
+        <section class="categories" id="home">
+            <div class="container1">
+                <div class="image-container">
+                    <img src="assets/court.jpg" alt="Court Banner">
+                    <div class="overlay">Historic Court Ruling Ensures Equal Access to Justice for All Citizens</div>
+                    
+                </div>
+            </div>
+            <div class="container2">
+                <div class="image-container">
+                    <img src="assets/protest.jpg" alt="Protest Banner">
+                    <div class="overlay">Youth-Led Protest Sparks National Movement for Education Action</div>
+                </div>
+                <div class="image-container">
+                    <img src="assets/election.webp" alt="Election Banner">
+                    <div class="overlay">First-Time Voters Make Their Voices Heard in 2024 Election</div>
+                </div>
+                <div class="image-container">
+                    <img src="assets/sport.webp" alt="Sport Banner">
+                    <div class="overlay">India Secures Thrilling Victory in Last-Over Clash Against Rivals</div>
+                </div>
+                <div class="image-container">
+                    <img src="assets/olympic.webp" alt="Olympic Banner">
+                    <div class="overlay">Historic Olympic Games Showcase Unprecedented Diversity and Inclusion</div>
+                </div>
+            </div>
+        </section>
+<br/>
+
+        <section id="world">
+            <h1 style="margin: 10px;">WORLD UPDATES</h1>
+            <div class="video">
+                <!-- Right half, currently empty -->
+                <div>
+                    <div class="col1">
+                        <iframe id="videoPlayer" width="100%" height="500px" src="https://www.youtube.com/embed/9n0GjTn_TTs"
+                            title="Lucknow News Today | Doctors And Medical Students Hold Protest At KGMU Lucknow" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Left half with two columns -->
+                <div>
+                    <div class="col2">
+                        <div class="row" style="display: flex; flex-wrap: wrap; margin: 10px;">
+                            <div class="column" style="flex: 1; min-width: 250px; margin: 5px;">
+                                <div class="card"
+                                    style="display: flex; justify-content: space-between; align-items: center; background-color: white; border-bottom: 1px solid #ccc; padding: 10px;"
+                                    onclick="changeVideo('https://www.youtube.com/embed/MnC32wQXtuA')">
+                                    <div style="text-align: right; margin-right: 10px;">
+                                        <p style="margin: 0; padding: 0;">Paris Olympics: Where Did India Go Wrong?</p>
+                                    </div>
+                                    <img style="width: 100px; height: 100px; object-fit: cover;" src="assets/olympic.webp"
+                                        alt="Paris Olympics">
+                                </div>
+                            </div>
+                            <div class="column" style="flex: 1; min-width: 250px; margin: 5px;">
+                                <div class="card"
+                                    style="display: flex; justify-content: space-between; align-items: center; background-color: white; border-bottom: 1px solid #ccc; padding: 10px;"
+                                    onclick="changeVideo('https://www.youtube.com/embed/9n0GjTn_TTs')">
+                                    <div style="text-align: right; margin-right: 10px;">
+                                        <p style="margin: 0; padding: 0;">Lucknow News Today</p>
+                                    </div>
+                                    <img style="width: 100px; height: 100px; object-fit: cover;" src="assets/court.jpg"
+                                        alt="Lucknow News">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="display: flex; flex-wrap: wrap; margin: 10px;">
+                            <div class="column" style="flex: 1; min-width: 250px; margin: 5px;">
+                                <div class="card"
+                                    style="display: flex; justify-content: space-between; align-items: center; background-color: white; border-bottom: 1px solid #ccc; padding: 10px;"
+                                    onclick="changeVideo('https://www.youtube.com/embed/hybG0rriFeE')">
+                                    <div style="text-align: right; margin-right: 10px;">
+                                        <p style="margin: 0; padding: 0;"></p> Cricket's Latest News</p>
+                                    </div>
+                                    <img style="width: 100px; height: 100px; object-fit: cover;" src="assets/sport.webp"
+                                        alt="Cricket Format">
+                                </div>
+                            </div>
+                            <div class="column" style="flex: 1; min-width: 250px; margin: 5px;">
+                                <div class="card"
+                                    style="display: flex; justify-content: space-between; align-items: center; background-color: white; border-bottom: 1px solid #ccc; padding: 10px;"
+                                    onclick="changeVideo('https://www.youtube.com/embed/4gdLsGtFwqk')">
+                                    <div style="text-align: right; margin-right: 10px;">
+                                        <p style="margin: 0; padding: 0;">Supreme Court Justice on "The Takeout"</p>
+                                    </div>
+                                    <img style="width: 100px; height: 100px; object-fit: cover;" src="assets/court.jpg"
+                                        alt="Justice Gorsuch">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="display: flex; flex-wrap: wrap; margin: 10px;">
+                            <div class="column" style="flex: 1; min-width: 250px; margin: 5px;">
+                                <div class="card"
+                                    style="display: flex; justify-content: space-between; align-items: center; background-color: white; border-bottom: 1px solid #ccc; padding: 10px;"
+                                    onclick="changeVideo('https://www.youtube.com/embed/iFEiLiLU1qs')">
+                                    <div style="text-align: right; margin-right: 10px;">
+                                        <p style="margin: 0; padding: 0;">‘Never Trumpers’ Line Up to Support Kamala Harris</p>
+                                    </div>
+                                    <img style="width: 100px; height: 100px; object-fit: cover;" src="assets/election.webp"
+                                        alt="Kamala Harris">
+                                </div>
+                            </div>
+                            <div class="column" style="flex: 1; min-width: 250px; margin: 5px;">
+                                <div class="card"
+                                    style="display: flex; justify-content: space-between; align-items: center; background-color: white; border-bottom: 1px solid #ccc; padding: 10px;"
+                                    onclick="changeVideo('https://www.youtube.com/embed/Vs3OfM5SQqE')">
+                                    <div style="text-align: right; margin-right: 10px;">
+                                        <p style="margin: 0; padding: 0;">UP By-election 2024</p>
+                                    </div>
+                                    <img style="width: 100px; height: 100px; object-fit: cover;" src="assets/election.webp"
+                                        alt="Lucknow News">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="topics">
+            <h1 style="margin: 10px;">TOP PICKS FOR YOU</h1>
+            
+            <div style="display: flex; align-items: center; justify-content: center; position: relative;">
+                <button id="scroll-left" style="margin-right: 10px;">&#10094;</button>
+                <div style="overflow-x: auto; white-space: nowrap; margin: 10px;">
+                    <div style="display: inline-flex; gap: 20px;">
+                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="assets/court.jpg" alt="Supreme Court" style="width:300px;height:200px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Supreme Court News</h1>
+                                    <p>Explore news about the Supreme Court decisions.</p>
+                                    <p>Stay informed and updated!</p>
+                                    <button type="button">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="assets/election.webp" alt="Election Updates" style="width:300px;height:200px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Election Updates</h1>
+                                    <p>Explore news about the latest elections.</p>
+                                    <p>Get insights and analysis!</p>
+                                    <button type="button">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="assets/sport.webp" alt="Cricket News" style="width:300px;height:200px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Cricket News</h1>
+                                    <p>Explore news about the latest cricket matches.</p>
+                                    <p>Catch all the action!</p>
+                                    <button type="button">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="assets/olympic.webp" alt="Olympics Highlights" style="width:300px;height:200px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Olympics Highlights</h1>
+                                    <p>Explore news about the latest Olympics events.</p>
+                                    <p>Cheer for your favorites!</p>
+                                    <button type="button">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="assets/court.jpg" alt="Supreme Court" style="width:300px;height:200px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Supreme Court News</h1>
+                                    <p>Explore news about the Supreme Court decisions.</p>
+                                    <p>Stay informed and updated!</p>
+                                    <button type="button">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="assets/election.webp" alt="Election Updates" style="width:300px;height:200px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Election Updates</h1>
+                                    <p>Explore news about the latest elections.</p>
+                                    <p>Get insights and analysis!</p>
+                                    <button type="button">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="assets/sport.webp" alt="Cricket News" style="width:300px;height:200px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Cricket News</h1>
+                                    <p>Explore news about the latest cricket matches.</p>
+                                    <p>Catch all the action!</p>
+                                    <button type="button">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="assets/olympic.webp" alt="Olympics Highlights" style="width:300px;height:200px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>Olympics Highlights</h1>
+                                    <p>Explore news about the latest Olympics events.</p>
+                                    <p>Cheer for your favorites!</p>
+                                    <button type="button">Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="scroll-right" style="margin-left: 10px;">&#10095;</button>
+            
+            
+            </div>
+
+        </section>
+    <br />
+
+
+        <section class="section" id="latest">
+            <h1 style="margin: 10px;">LATEST NEWS STORIES</h1>
+            <div class="news-container">
+                <div class="news-item">
+                    <img src="assets/court.jpg" alt="Doctor Murder Protests">
+                    <div>
+                        <h2>Protests in Kolkata Over Doctor's Murder</h2>
+                        <p>Following a murder of a doctor by rape and torture inside a government hospital, activists of different
+                            humanitarian and political organisations and medical professionals participate in a rally with posters
+                            and torches demanding adequate intervention of the ruling government and exemplary punishment of the
+                            culprits, in Kolkata, on August 13, 2024.</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="assets/election.webp" alt="Calcutta High Court">
+                    <div>
+                        <h2>Calcutta High Court Transfers Doctor Murder Probe to CBI</h2>
+                        <p>Top news of the day: Calcutta High Court transfers doctor murder probe to CBI; Supreme Court closes
+                            contempt proceedings against Patanjali, and more.</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="assets/sport.webp" alt="Consumer Price Inflation">
+                    <div>
+                        <h2>Consumer Price Inflation Eases</h2>
+                        <p>Consumer price inflation eased to a nearly five-year low of 3.54% in July 2024.</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="assets/olympic.webp" alt="Joint Parliamentary Committee Inquiry">
+                    <div>
+                        <h2>Congress Demands JPC Inquiry into SEBI Chief's Charges</h2>
+                        <p>Congress has demanded a Joint Parliamentary Committee (JPC) inquiry into the charges against Securities
+                            and Exchange Board of India (SEBI) chief Madhabi Puri Buch in the latest Hindenburg report.</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="assets/court.jpg" alt="PM Modi Visits Relief Camp">
+                    <div>
+                        <h2>PM Modi Visits Relief Camp in Wayanad</h2>
+                        <p>Prime Minister Narendra Modi visits the relief camp to meet and interact with the victims and survivors
+                            of the landslide, in Wayanad on August 10, 2024.</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="assets/election.webp" alt="Plane Crash in Brazil">
+                    <div>
+                        <h2>Plane Crashes in Brazil</h2>
+                        <p>Morning Digest: Plane crashes in Brazil killing all 61 aboard; Indian wrestler Aman Sehrawat wins bronze
+                            at Paris Olympics, and more.</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="assets/sport.webp" alt="Manish Sisodia Released">
+                    <div>
+                        <h2>Manish Sisodia Released from Tihar Jail</h2>
+                        <p>AAP leader and former Delhi Deputy Chief Minister Manish Sisodia waves to supporters after being released
+                            from the Tihar jail in New Delhi on August 9, 2024 after the Supreme Court granted bail in the
+                            corruption and money laundering cases linked to the alleged Delhi Excise policy scam.</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="assets/olympic.webp" alt="Neeraj Chopra Wins Silver">
+                    <div>
+                        <h2>Neeraj Chopra Wins Silver in Men's Javelin</h2>
+                        <p>Neeraj Chopra got silver in men’s Javelin throw in Stade de France stadium in Paris on 08 August 2024.
+                        </p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="assets/court.jpg" alt="Indian Hockey Team Wins Bronze">
+                    <div>
+                        <h2>Indian Men's Hockey Team Wins Bronze</h2>
+                        <p>Indian men’s hockey team celebrates after winning the Olympic bronze against Spain on August 08, 2024.
+                        </p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="assets/election.webp" alt="Earthquake in Japan">
+                    <div>
+                        <h2>Powerful Earthquake Hits Japan</h2>
+                        <p>A powerful earthquake hits off southern Japan; tsunami advisory issued.</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="assets/sport.webp" alt="Vinesh Phogat Announces Retirement">
+                    <div>
+                        <h2>Vinesh Phogat Announces Retirement</h2>
+                        <p>Vinesh Phogat of India reacts after winning the match against Yusneylis Guzman Lopez of Cuba.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section id="footer">
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>About Us</h3>
+                <br /><br />
+                <p>We are a team of passionate developers providing solutions to help you build your dream projects. Connect
+                    with us on social media to stay updated with our latest offerings and insights.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="assets/facebook.webp" alt="Facebook"></a>
+                    <a href="#"><img src="assets/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="assets/linkedin.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="assets/instagram.png" alt="Instagram"></a>
+                </div>
+                <iframe style="height: 100px; margin-top: 20px;"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15560.278456055023!2d80.16689383738395!3d12.838778069474605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1723568621595!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+            </div>
+            <div class="footer-right">
+                <h3>Subscribe</h3>
+                <div class="container">
+                    <form action="/action_page.php">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="fname">First Name</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="fname" name="firstname" placeholder="Your name">
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="country">Country</label>
+                            </div>
+                            <div class="col-75">
+                                <input list="countries" id="country" name="country" placeholder="Select your country">
+                                <datalist id="countries"></datalist>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="email" name="email" placeholder="Your email">
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,534 @@
+html {
+    scroll-behavior: smooth;
+}
+/* NAVBAR */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* css to reset all the designs */
+
+/* add styles on elements */
+
+.header {
+    border-bottom: 1px solid #E2E8F0;
+    background-color: #222;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    /* background-color: #101010; */
+    background-color: #fff;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link {
+    /* font-size: 1.6rem; */
+    font-size: 2rem;
+    font-weight: 400;
+    /* color: #475569; */
+    color: #fff;
+    /* change */
+}
+
+.nav-link:hover {
+    color: #482ff7;
+}
+
+.nav-logo {
+    /* font-size: 2.1rem; */
+    font-size: 3rem;
+    font-weight: 500;
+    /* color: #482ff7; */
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        z-index: 1;
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        /* background-color: #fff; */
+        background-color: #222;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+        color: #fff;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+/*Categories*/
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 10px; */
+    /* Add some gap between the containers */
+    margin: 10px;
+    z-index: -3;
+}
+
+.container1,
+.container2 {
+    display: grid;
+    /* gap: 10px; */
+}
+
+.container2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* Ensure the container takes up the full space */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* This makes the image cover the container while maintaining its aspect ratio */
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    font-size: 30px;
+ 
+    padding: 20px;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+    /* Show the overlay text when hovering over the image */
+}
+
+.image-container:hover img {
+
+    filter: brightness(50%)
+    /* Dim the image when hovering */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .categories {
+        grid-template-columns: 1fr;
+        /* Stack the images on smaller screens */
+    }
+}
+
+/*cards*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.video {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    /* Set height to auto for flexibility */
+}
+
+.col1 {
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 20px;
+}
+
+.col2 {
+    grid-column: 2;
+    margin-top: 20px;
+    /* Reduced margin */
+}
+
+/* Responsive adjustments */
+.video {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    /* Allow height to fit content */
+}
+
+.col1 {
+    grid-column: 1;
+    display: grid;
+    grid-template-rows: auto;
+    /* Set to auto to avoid excess height */
+    padding: 20px;
+}
+
+.col2 {
+    grid-column: 2;
+    margin-top: 60px;
+    /* Reduced margin */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .video {
+        display: grid;
+        grid-template-rows: auto auto;
+        /* Two rows for mobile view */
+        grid-template-columns: 1fr;
+        /* One column in mobile view */
+        height: auto;
+        /* Allow height to fit content */
+    }
+
+    .col1 {
+        grid-row: 1;
+        /* First row on mobile */
+        padding: 10px;
+        /* Reduced padding */
+        height: 300px;
+        /* Set a fixed height for the video player */
+    }
+
+    .col2 {
+        grid-row: 2;
+        /* Second row on mobile */
+        margin-top: 10px;
+        /* Reduced space between video player and list */
+    }
+
+    .column {
+        width: 100%;
+        /* Full width for cards */
+        display: block;
+        /* Block display for card items */
+        margin-bottom: 10px;
+        /* Space between cards */
+    }
+
+    iframe {
+        width: 100%;
+        /* Make iframe full width */
+        height: 100%;
+        /* Make iframe fill its container */
+        border: none;
+        /* Remove default border */
+    }
+}
+
+/* Style the counter cards */
+.card {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+/* Hide scrollbar for modern browsers */
+div::-webkit-scrollbar {
+    display: none;
+}
+
+/* Style the scroll buttons */
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #2980b9;
+    align-self: center;
+    /* Align buttons vertically with cards */
+}
+
+/* Optional: style for the flip card */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    /* Updated height */
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    background-color: #161819;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+                  .flip-card-back h1 {
+               text-align: center;
+               color: white;
+               margin: 10px;;
+           }
+    
+           .news-container {
+               display: flex;
+               flex-direction: column;
+               gap: 20px;
+           }
+    
+           .news-item {
+               background-color: #fff;
+               padding: 15px;
+               border-radius: 5px;
+               box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+               display: flex;
+               align-items: center;
+               gap: 15px;
+           }
+    
+           .news-item img {
+               width: 100px;
+               height: auto;
+               border-radius: 5px;
+           }
+    
+           .news-item h2 {
+               margin: 0;
+               font-size: 1.2em;
+               color: #007BFF;
+           }
+    
+           .news-item p {
+               margin: 5px 0;
+               color: #555;
+           }    * {
+                box-sizing: border-box;
+            }
+        
+         .footer {
+             background-color: #333;
+             color: #fff;
+             padding: 20px 0;
+             display: flex;
+             justify-content: center;
+         }
+    
+         .footer-content {
+             width: 80%;
+             display: flex;
+             justify-content: space-between;
+         }
+    
+         .footer-left,
+         .footer-right {
+             width: 45%;
+         }
+    
+         .footer-left h3,
+         .footer-right h3 {
+             margin-bottom: 0px;
+         }
+    
+         .footer-left p {
+             font-size: 14px;
+             line-height: 1.6;
+             margin-bottom: 20px;
+         }
+    
+         .social-icons a {
+             margin-right: 10px;
+             display: inline-block;
+         }
+    
+         .social-icons img {
+             width: 32px;
+             height: 32px;
+         }
+    
+         .container {
+             background-color: transparent !important;
+             padding: 20px;
+             border-radius: 5px;
+             color: #ffffff;
+         }
+    
+         input[type=text],
+         select,
+         textarea,
+         input[list=countries] {
+             width: 100%;
+             padding: 12px;
+             border: 1px solid #fffbfb;
+             border-radius: 4px;
+             resize: vertical;
+         }
+    
+         label {
+             padding: 12px 12px 12px 0;
+             display: inline-block;
+         }
+    
+         input[type=submit] {
+             background-color: #04AA6D;
+             color: white;
+             padding: 12px 20px;
+             border: none;
+             border-radius: 4px;
+             cursor: pointer;
+             float: right;
+         }
+    
+         input[type=submit]:hover {
+             background-color: #45a049;
+         }
+    
+         .row:after {
+             content: "";
+             display: table;
+             clear: both;
+         }
+    
+         @media screen and (max-width: 768px) {
+             .footer-content {
+                 flex-direction: column;
+                 align-items: center;
+             }
+    
+             .footer-left,
+             .footer-right {
+                 width: 100%;
+                 margin-bottom: 20px;
+             }
+         }
+                 .footer-map {
+                     width: 100%;
+                     height: 300px;
+                     margin-top: 20px;
+                     border-radius: 5px;
+                 }
